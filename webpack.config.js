@@ -1,34 +1,29 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
-  entry: [
-    'webpack-hot-middleware/client',
-    './index'
-  ],
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
-  },
-  plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  entry: './index.js',
+  output: { path: __dirname, filename: 'public/bundle.js' },
   module: {
     loaders: [
       {
-        test: /\.js$/,
-        loaders: [ 'babel' ],
+        test: /.jsx?$/,
+        loader: 'babel-loader',
         exclude: /node_modules/,
-        include: __dirname
+        query: {
+          presets: ['es2015', 'react']
+        }
       },
       {
-        test: /\.css?$/,
-        loaders: [ 'style', 'raw' ],
-        include: __dirname
+        test: /\.(scss|css)$/,
+        loader: ExtractTextPlugin.extract('css!sass')
       }
     ]
-  }
-}
+  },
+  plugins: [
+      new ExtractTextPlugin('public/style.css', {
+          allChunks: true
+      })
+  ]
+};
