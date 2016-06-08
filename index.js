@@ -7,6 +7,9 @@ import { Router, Route, browserHistory } from 'react-router';
 import AboutContainer from './containers/AboutContainer.jsx';
 import ProjectsContainer from './containers/ProjectsContainer.jsx'
 
+
+require('./stylesheets/main.scss');
+
 const store = configureStore()
 
 render((
