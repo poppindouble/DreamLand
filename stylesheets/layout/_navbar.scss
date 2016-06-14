@@ -1,3 +1,21 @@
 #navbar {
 	background-color: yellow;
+	height: 50px;
+	text-transform: uppercase;
+	ul {
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			width: 50%;
+			display: inline-block;
+			text-align: center;
+			line-height: 50px;
+		}
+	}
+
+	.navbar-items {
+		width: 50%;
+
+	}
 }

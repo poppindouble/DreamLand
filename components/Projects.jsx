@@ -3,7 +3,30 @@ import React, { Component, PropTypes } from 'react';
 export default class Projects extends Component {
 	render() {
 		return (
-			<h1> I am at Projects Tab</h1>
+			<div className="my-projects">
+				<h1>My Projects</h1>
+				<div className="project-item">
+
+				</div>
+				<div className="project-item">
+
+				</div>
+				<div className="project-item">
+
+				</div>
+				<div className="project-item">
+
+				</div>
+				<div className="project-item">
+
+				</div>
+				<div className="project-item">
+
+				</div>
+				<div className="project-item">
+
+				</div>
+			</div>
 		)
 	}
 }
