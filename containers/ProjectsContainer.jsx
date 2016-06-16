@@ -1,17 +1,21 @@
 import { connect } from 'react-redux';
 import Projects from '../components/Projects.jsx';
+import { onProjectClicked } from '../actions/projectsAction'
 
-const mapStateToProps = () => ({
 
+const mapStateToProps = (state) => ({
+	backgrounColour: state.projectsReducer.backgroundColour,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-
+	onProjectClicked: () => {
+		dispatch(onProjectClicked());
+	},
 });
 
-const CanvasAthleteListContainer = connect(
+const ProjectsContainer = connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(Projects);
 
-export default Projects;
+export default ProjectsContainer;

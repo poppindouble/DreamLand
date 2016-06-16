@@ -9,9 +9,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 });
 
-const CanvasAthleteListContainer = connect(
+const AboutContainer = connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(About);
 
-export default About;
+export default AboutContainer;

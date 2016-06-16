@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import testReducer from './testReducer.js';
+import projectsReducer from './projectsReducer.js';
 
 
 const builderApp = combineReducers({
-  testReducer,
+  projectsReducer,
 });
 
 export default builderApp;
