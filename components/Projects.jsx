@@ -8,31 +8,48 @@ export default class Projects extends Component {
 				<h1>{this.props.backgrounColour}</h1>
 
 				<div className="project-item">
-					<button onClick={this.props.onProjectClicked}>My Button</button>
+					<img src='../img/off-the-grid.jpg' />
+					<div className='prject-item-overlay'>
+
+					</div>
 				</div>
-
 				<div className="project-item">
-					<button>My Button</button>
-				</div>
+					<img src='../img/off-the-grid.jpg' />
+					<div className='prject-item-overlay'>
 
-				<div className="project-item">
-
-				</div>
-
-				<div className="project-item">
+					</div>
 
 				</div>
-
 				<div className="project-item">
+					<img src='../img/off-the-grid.jpg' />
+					<div className='prject-item-overlay'>
+
+					</div>
 
 				</div>
-
 				<div className="project-item">
+					<img src='../img/off-the-grid.jpg' />
+					<div className='prject-item-overlay'>
 
+					</div>
 				</div>
-
 				<div className="project-item">
+					<img src='../img/off-the-grid.jpg' />
+					<div className='prject-item-overlay'>
 
+					</div>
+				</div>
+				<div className="project-item">
+					<img src='../img/off-the-grid.jpg' />
+					<div className='prject-item-overlay'>
+
+					</div>
+				</div>
+				<div className="project-item">
+					<img src='../img/off-the-grid.jpg' />
+					<div className='prject-item-overlay'>
+
+					</div>
 				</div>
 			</div>
 		)
