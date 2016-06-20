@@ -1,8 +1,18 @@
 import React, { Component, PropTypes } from 'react';
 
 export default class Projects extends Component {
-	render() {
 
+	constructor() {
+		super();
+		this.onProjectClicked = this.onProjectClicked.bind(this);
+	}
+
+	onProjectClicked() {
+		this.props.onProjectClicked()
+	}
+
+
+	render() {
 		return (
 			<div className="my-projects">
 				<h1>{this.props.backgrounColour}</h1>
@@ -12,9 +22,9 @@ export default class Projects extends Component {
 					<div className='prject-item-overlay'>
 						<h3>Project Name</h3>
 						<p>Description</p>
-						<a href="https://github.com/davidozhang/off-the-grid">
-							<i className="fa fa-github-alt" aria-hidden="true"></i>
-						</a>
+						<button onClick={this.onProjectClicked}>
+							<i className="fa fa-eye" aria-hidden="true"></i>
+						</button>
 					</div>
 				</div>
 

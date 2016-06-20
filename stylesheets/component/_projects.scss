@@ -42,6 +42,19 @@
 				color: white;
 			}
 
+			button {
+				background-color: transparent;
+				border: none;
+
+				&:focus {
+					outline: 0;
+				}
+
+				&:hover i{
+					color: lightgrey;
+				}
+			}
+
 			i {
 				font-size: 90px;
 				color: white;
