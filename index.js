@@ -5,7 +5,7 @@ import App from './components/App.jsx';
 import configureStore from './store/configureStore'
 import { Router, Route, browserHistory } from 'react-router';
 import AboutContainer from './containers/AboutContainer.jsx';
-import ProjectsContainer from './containers/ProjectsContainer.jsx'
+import ProjectListContainer from './containers/ProjectListContainer.jsx'
 
 
 require('./stylesheets/main.scss');
@@ -17,7 +17,7 @@ render((
 		<Router history={browserHistory}>
 			<Route path="/" component={App}>
 				<Route path='/about' component={AboutContainer} />
-				<Route path='/projects' component={ProjectsContainer} />
+				<Route path='/projects' component={ProjectListContainer} />
 			</Route>
 		</Router>
 	</Provider>

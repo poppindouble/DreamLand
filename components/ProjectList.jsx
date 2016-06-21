@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-export default class Projects extends Component {
+export default class ProjectList extends Component {
 
 	constructor() {
 		super();
@@ -131,6 +131,6 @@ export default class Projects extends Component {
 	}
 }
 
-Projects.propTypes = {
+ProjectList.propTypes = {
 
 };

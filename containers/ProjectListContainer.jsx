@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Projects from '../components/Projects.jsx';
+import ProjectList from '../components/ProjectList.jsx';
 import { onProjectClicked } from '../actions/projectsAction'
 
 
@@ -13,9 +13,9 @@ const mapDispatchToProps = (dispatch) => ({
 	},
 });
 
-const ProjectsContainer = connect(
+const ProjectListContainer = connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(Projects);
+)(ProjectList);
 
-export default ProjectsContainer;
+export default ProjectListContainer;
