@@ -1,15 +1,29 @@
-import { ON_PROJECT_CLICKED } from '../actions/projectsAction'
+import { FETCH_PROJECTS_IF_NEEDED } from '../actions/projectsAction'
 
 const initialState = {
-	name: '',
-	backgroundColour: 'black',
+	projects: [],
 };
 
 const projectsReducer = (state = initialState, action) => {
 	switch (action.type) {
-	case ON_PROJECT_CLICKED: {
+	case FETCH_PROJECTS_IF_NEEDED: {
 		return Object.assign({}, state, {
-			backgroundColour: 'yellow',
+			projects: [
+				{
+					"name" : "Off-The-Grid",
+					"description" : "Winner of Hack Western 2"
+				},
+
+				{
+					"name" : "Dream-Land",
+					"description" : "Personal Website"
+				},
+
+				{
+					"name" : "Watson",
+					"description" : "Watson Hackathon"
+				}
+			],
 		});
 	}
 	default:

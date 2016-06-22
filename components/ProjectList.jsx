@@ -3,29 +3,24 @@ import ProjectContainer from '../containers/ProjectContainer.jsx'
 
 export default class ProjectList extends Component {
 
-	constructor() {
-		super();
-		this.onProjectClicked = this.onProjectClicked.bind(this);
-	}
-
-	onProjectClicked() {
-		this.props.onProjectClicked()
+	componentDidMount() {
+		this.props.fetchProjectsIfNeeded();
 	}
 
 	render() {
-		let insideElement;
-		insideElement = (
+		let insideElement = (
+			this.props.projects.map((project, index) =>
 				<ProjectContainer
-					projectName="Off-The-Grid"
-					description="Winner of Hack Western 2"
+					key={index}
+					projectName={project.name}
+					description={project.description}
 				/>
-			);
-
+			)
+		);
 		return (
 			<div className="my-projects">
-				<h1>{this.props.backgrounColour}</h1>
+				<h1>My Projects</h1>
 				{insideElement}
-
 			</div>
 		)
 	}

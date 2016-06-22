@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
 import ProjectList from '../components/ProjectList.jsx';
-import { onProjectClicked } from '../actions/projectsAction'
+import { fetchProjectsIfNeeded } from '../actions/projectsAction'
 
 
 const mapStateToProps = (state) => ({
-	backgrounColour: state.projectsReducer.backgroundColour,
+	projects: state.projectsReducer.projects,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-	onProjectClicked: () => {
-		dispatch(onProjectClicked());
+	fetchProjectsIfNeeded: () => {
+		dispatch(fetchProjectsIfNeeded());
 	},
 });
 

@@ -1,6 +1,6 @@
-export const ON_PROJECT_CLICKED = 'ON_PROJECT_CLICKED';
-export function onProjectClicked() {
+export const FETCH_PROJECTS_IF_NEEDED = 'FETCH_PROJECTS_IF_NEEDED';
+export function fetchProjectsIfNeeded() {
 	return {
-		type: ON_PROJECT_CLICKED,
+		type: FETCH_PROJECTS_IF_NEEDED,
 	};
 }
