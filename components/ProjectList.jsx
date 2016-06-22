@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import ProjectContainer from '../containers/ProjectContainer.jsx'
 
 export default class ProjectList extends Component {
 
@@ -11,121 +12,20 @@ export default class ProjectList extends Component {
 		this.props.onProjectClicked()
 	}
 
-
 	render() {
+		let insideElement;
+		insideElement = (
+				<ProjectContainer
+					projectName="Off-The-Grid"
+					description="Winner of Hack Western 2"
+				/>
+			);
+
 		return (
 			<div className="my-projects">
 				<h1>{this.props.backgrounColour}</h1>
+				{insideElement}
 
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<button onClick={this.onProjectClicked}>
-							<i className="fa fa-eye" aria-hidden="true"></i>
-						</button>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
-
-				<div className="project-item">
-					<img src='../img/off-the-grid.jpg' />
-					<div className='prject-item-overlay'>
-						<h3>Project Name</h3>
-						<p>Description</p>
-						<i className="fa fa-github-alt" aria-hidden="true"></i>
-					</div>
-				</div>
 			</div>
 		)
 	}
