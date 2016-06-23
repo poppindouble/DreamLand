@@ -3,13 +3,12 @@ import Modal from 'react-modal';
 
 export default class ProjectModal extends Component {
 
-
 	render() {
-		console.log("getting called")
 		return (
 			<div>
 				<Modal
 					isOpen={this.props.isOpen}
+					onRequestClose={this.props.onClose}
 					className="project-modal"
 					overlayClassName="project-modal-overlay"
 				>

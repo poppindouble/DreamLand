@@ -4,3 +4,10 @@ export function openProjectModal() {
 		type: OPEN_PROJECT_MODAL,
 	};
 }
+
+export const CLOSE_PROJECT_MODAL = 'CLOSE_PROJECT_MODAL';
+export function closeProjectModal() {
+	return {
+		type: CLOSE_PROJECT_MODAL,
+	};
+}

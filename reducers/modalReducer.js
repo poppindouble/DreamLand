@@ -1,4 +1,4 @@
-import { OPEN_PROJECT_MODAL } from '../actions/projectModalAction'
+import { OPEN_PROJECT_MODAL, CLOSE_PROJECT_MODAL } from '../actions/projectModalAction'
 
 const initialState = {
 	isOpen: false,
@@ -9,6 +9,10 @@ const modalReducer = (state = initialState, action) => {
 		case OPEN_PROJECT_MODAL:
 			return Object.assign({}, state, {
 				isOpen: true,
+			});
+		case CLOSE_PROJECT_MODAL:
+			return Object.assign({}, state, {
+				isOpen: false,
 			});
 		default:
 			return state;
