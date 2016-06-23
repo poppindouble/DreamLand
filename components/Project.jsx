@@ -1,6 +1,16 @@
 import React, { Component, PropTypes } from 'react';
 
 export default class Project extends Component {
+
+	constructor() {
+		super();
+		this.onProjectClicked = this.onProjectClicked.bind(this);
+	}
+
+	onProjectClicked() {
+		this.props.onProjectClicked();
+	}
+
 	render() {
 		return (
 			<div className="project-item">

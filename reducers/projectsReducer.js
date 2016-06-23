@@ -22,6 +22,36 @@ const projectsReducer = (state = initialState, action) => {
 				{
 					"name" : "Watson",
 					"description" : "Watson Hackathon"
+				},
+
+				{
+					"name" : "Watson",
+					"description" : "Watson Hackathon"
+				},
+
+				{
+					"name" : "Watson",
+					"description" : "Watson Hackathon"
+				},
+
+				{
+					"name" : "Watson",
+					"description" : "Watson Hackathon"
+				},
+
+				{
+					"name" : "Watson",
+					"description" : "Watson Hackathon"
+				},
+
+				{
+					"name" : "Watson",
+					"description" : "Watson Hackathon"
+				},
+
+				{
+					"name" : "Watson",
+					"description" : "Watson Hackathon"
 				}
 			],
 		});
