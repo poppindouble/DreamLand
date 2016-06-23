@@ -11,47 +11,56 @@ const projectsReducer = (state = initialState, action) => {
 			projects: [
 				{
 					"name" : "Off-The-Grid",
-					"description" : "Winner of Hack Western 2"
+					"description" : "Winner of Hack Western 2",
+					"details" : "1",
 				},
 
 				{
 					"name" : "Dream-Land",
-					"description" : "Personal Website"
+					"description" : "Personal Website",
+					"details" : "off line sharing drawing panel, it is really useful when you don't have internet",
 				},
 
 				{
 					"name" : "Watson",
-					"description" : "Watson Hackathon"
+					"description" : "Watson Hackathon",
+					"details" : "is really useful when you don't have internet",
 				},
 
 				{
 					"name" : "Watson",
-					"description" : "Watson Hackathon"
+					"description" : "Watson Hackathon",
+					"details" : "off line sharing drawing panel",
 				},
 
 				{
 					"name" : "Watson",
-					"description" : "Watson Hackathon"
+					"description" : "Watson Hackathon",
+					"details" : "off line sharing drawing panel, it is really useful when you don't have internet",
 				},
 
 				{
 					"name" : "Watson",
-					"description" : "Watson Hackathon"
+					"description" : "Watson Hackathon",
+					"details" : "off line sharing drawing panel, it is really useful when you don't have internet",
 				},
 
 				{
 					"name" : "Watson",
-					"description" : "Watson Hackathon"
+					"description" : "Watson Hackathon",
+					"details" : "off line sharing drawing panel, it is really useful when you don't have internet",
 				},
 
 				{
 					"name" : "Watson",
-					"description" : "Watson Hackathon"
+					"description" : "Watson Hackathon",
+					"details" : "off line sharing drawing panel, it is really useful when you don't have internet",
 				},
 
 				{
 					"name" : "Watson",
-					"description" : "Watson Hackathon"
+					"description" : "Watson Hackathon",
+					"details" : "off line sharing drawing panel, it is really useful when you don't have internet",
 				}
 			],
 		});

@@ -5,9 +5,9 @@ import { openProjectModal } from '../actions/projectModalAction.js'
 const mapStateToProps = (state) => ({
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch, ownProps) => ({
 	onProjectClicked: () => {
-		dispatch(openProjectModal());
+		dispatch(openProjectModal(ownProps));
 	}
 });
 

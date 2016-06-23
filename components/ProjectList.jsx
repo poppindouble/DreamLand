@@ -15,6 +15,7 @@ export default class ProjectList extends Component {
 					key={index}
 					projectName={project.name}
 					description={project.description}
+					details={project.details}
 				/>
 			)
 		);

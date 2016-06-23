@@ -12,7 +12,8 @@ export default class ProjectModal extends Component {
 					className="project-modal"
 					overlayClassName="project-modal-overlay"
 				>
-					<h2>This is a Modal</h2>
+					<h2>{`${this.props.projectInfo.projectName}`}</h2>
+					<p>{`${this.props.projectInfo.details}`}</p>
 				</Modal>
 			</div>
 		);
