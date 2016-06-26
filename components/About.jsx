@@ -3,7 +3,11 @@ import React, { Component, PropTypes } from 'react';
 export default class About extends Component {
 	render() {
 		return (
-			<h1> I am at About Tab</h1>
+			<div className='about-header'>
+				<h1>Shuangshuang Zhao</h1>
+				<h2>iOS, Front-End Developer</h2>
+				<img src="../img/profile.jpg" />
+			</div>
 		);
 	}
 }
