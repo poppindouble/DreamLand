@@ -1,6 +1,6 @@
 #navbar {
-	background-color: yellow;
-	height: 50px;
+	background-color: rgb(97, 210, 231);
+	height: 80px;
 	text-transform: uppercase;
 	ul {
 		margin: 0px;
@@ -10,7 +10,12 @@
 			width: 50%;
 			display: inline-block;
 			text-align: center;
-			line-height: 50px;
+			line-height: 80px;
+		}
+
+		a {
+			text-decoration: none;
+			outline: 0px;
 		}
 	}
 
