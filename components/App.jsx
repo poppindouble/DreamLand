@@ -6,7 +6,7 @@ import Main from './Main.jsx'
 export default class App extends Component {
 	render() {
 		return (
-			<div>
+			<div id='wrapper'>
 				<NavBar />
 				<div>
 					<Main children={this.props.children} />

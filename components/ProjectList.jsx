@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ProjectContainer from '../containers/ProjectContainer.jsx';
 import ProjectModalContainer from '../containers/ProjectModalContainer.jsx'
+import CanvasProcessing from './CanvasProcessing.jsx'
 
 export default class ProjectList extends Component {
 
@@ -21,11 +22,14 @@ export default class ProjectList extends Component {
 		);
 		return (
 			<div>
-				<div className="my-projects">
-					<h1>My Projects</h1>
-					{insideElement}
+				<div>
+					<div className="my-projects">
+						<h1>My Projects</h1>
+						{insideElement}
+					</div>
+					<ProjectModalContainer />
 				</div>
-				<ProjectModalContainer />
+				<CanvasProcessing />
 			</div>
 		)
 	}
