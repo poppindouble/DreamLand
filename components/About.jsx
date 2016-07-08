@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import CanvasProcessing from './CanvasProcessing.jsx'
 
 export default class About extends Component {
 	render() {
@@ -15,7 +14,6 @@ export default class About extends Component {
 						I am fucking awesome! write all your shit here
 					</p>
 				</div>
-				<CanvasProcessing />
 			</div>
 		);
 	}
