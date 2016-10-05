@@ -7,10 +7,10 @@ export default class NavBar extends Component {
 			<nav id="navbar">
 				<ul>
 					<li className="navbar-items">
-						<Link to="/about">About Me</Link>
+						<a href="#About">About Me</a>
 					</li>
 					<li className="navbar-items">
-						<Link to="/projects">My Projects</Link>
+						<a href="#ProjectList">My Projects</a>
 					</li>
 				</ul>
 			</nav>

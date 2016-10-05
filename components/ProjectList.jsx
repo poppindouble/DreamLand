@@ -21,13 +21,13 @@ export default class ProjectList extends Component {
 		);
 		return (
 			<div>
-				<div>
+				<a name="ProjectList">
 					<div className="my-projects">
 						<h1>My Projects</h1>
 						{insideElement}
 					</div>
 					<ProjectModalContainer />
-				</div>
+				</a>
 			</div>
 		)
 	}
